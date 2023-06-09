@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ["^ ","~$foo",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$bible.core","~:top-ns","^7","~:type","~:fn"],"~:filename","/mnt/c/Users/larry/Dropbox/clojure/clojure-bible/src/bible/core.clj"]
+=======
+["^ ","~$foo",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$bible.core","~:top-ns","^7","~:type","~:fn"],"~:filename","/mnt/c/Users/larry/clojure/prj/bible/src/bible/core.clj"]
+>>>>>>> fd5c13900a97737a0d8aee84321e6a3d55e4f7f8
