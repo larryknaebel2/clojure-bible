@@ -5,5 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]]
   :main bible.cli
-  ;:repl-options {:init-ns bible.cli}
+  :profiles {:uberjar {:aot :all}}
+  ;:repl-options {:init-ns bible.cli} 
+  ;;:filespecs [{:type :paths :paths ["resources/"]}]
   )

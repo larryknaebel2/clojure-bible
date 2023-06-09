@@ -8,7 +8,7 @@
 
 
 
-(def commands "AVAILABLE COMMANDS: book chapter:verse - get verse, q - quit, ss - show state, st - set active translation, sb - set active book")
+(def commands "\nAVAILABLE COMMANDS: book chapter:verse - get verse, q - quit, ss - show state, st - set active translation, sb - set active book")
 
 
 (defn set-active-translation

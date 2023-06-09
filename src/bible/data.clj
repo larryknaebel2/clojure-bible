@@ -8,15 +8,9 @@
 (def headingsS "Verse\tKing James Bible\tAmerican Standard Version\tDouay-Rheims Bible\tDarby Bible Translation\tEnglish Revised Version\tWebster Bible Translation\tWorld English Bible\tYoung's Literal Translation\tAmerican King James Version\tWeymouth New Testament")
 (def headingsV (str/split headingsS #"\t"))
 
-;;(def genesis1-1-10-file "C:\\data\\bibles\\genesis_1_10.txt")
-;;(def genesis-file "C:\\data\\bibles\\genesis.txt")
-;;(def bible-file  "C:\\data\\bibles\\bibles_lessheadings.txt")
-
-(def genesis1-1-10-file "resources/genesis_1_10.txt")
-(def genesis-file "resources/genesis.txt")
-;;(def bible-file  "/mnt/c/Users/larry/clojure/prj/bible/resources/bibles_lessheadings.txt")
-;; above works also with full path
-(def bible-file  "resources/bibles_lessheadings.txt")
+(def genesis1-1-10-file "genesis_1_10.txt")
+(def genesis-file "genesis.txt")
+(def bible-file  "bibles_lessheadings.txt")
 
 (defn parse-line
   [line]
@@ -37,7 +31,8 @@
 
 (defn read-file
   [file-name numlines]
-  (with-open [r (io/reader file-name)]
+  ;; io/resource will get file from classpath
+  (with-open [r (io/reader (io/resource file-name))]
     (doall (map parse-line (take numlines (line-seq r))))))
 
 

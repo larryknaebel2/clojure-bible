@@ -1,15 +1,29 @@
 # bible
 
-This is an application written in Clojure that will display a specified Bible verse in one of ten English translations.
+A non-graphical command line application written in Clojure that will display a specified Bible verse in one of ten English translations.
 
-The application only runs on the non-graphical command line and will continue to
-expect input commands until told to exit.
+
+### Credits
+
+Bible free texts are from:
+
+Bible Hub (https://biblehub.com) / Open Bible (https://openbible.com)
+
+The free download as of 6/9/2023 now contains 14 translations. 
+
+***Note:*** The code will require modification to support 14.
+
+https://openbible.com/xls/bibles.xlsx (requires email)
+
+Open the downloaded file, enable editing, and "Save As" Text (Tab delimited)
+
+You will need to separate the headings as observed in the original data files. Other code modifications will be required.
 
 ## Starting the Application
 
         lein run
         or
-        java -jar bible-0.1.0-SNAPSHOT-standalone.jar
+        java -jar target/bible-0.1.0-SNAPSHOT-standalone.jar
 
 ## The Opening Screen
 ---
